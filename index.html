@@ -1,75 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+	<SCRIPT LANGUAGE="JavaScript">
+miesiac = new Array(12)
+miesiac[0] = "stycznia "
+miesiac[1] = "lutego "
+miesiac[2] = "marca "
+miesiac[3] = "kwietnia "
+miesiac[4] = "maja "
+miesiac[5] = "czerwca "
+miesiac[6] = "lipca "
+miesiac[7] = "sierpnia "
+miesiac[8] = "września "
+miesiac[9] = "października "
+miesiac[10] = "listopada "
+miesiac[11] = "grudnia "
+dzien = new Array(7)
+dzien[0] = "niedziela "
+dzien[1] = "poniedziałek "
+dzien[2] = "wtorek "
+dzien[3] = "środa "
+dzien[4] = "czwartek "
+dzien[5] = "piątek "
+dzien[6] = "sobota "
+function podaj_date(){
+var Dzisiaj = new Date()
+var Tygodnia = Dzisiaj.getDay()
+var Miesiac = Dzisiaj.getMonth()
+var Dnia = Dzisiaj.getDate()
+var Rok = Dzisiaj.getFullYear()
+if(Rok <= 99) Rok += 1900
+return dzien[Tygodnia] + "," + " " + Dnia + " " + miesiac[Miesiac] + ", " + Rok +"r." }
+//-->
+</SCRIPT>
+<SCRIPT style="color:rgb(255, 165, 0);">document.write("Dziś jest " + podaj_date())</SCRIPT>
+	
 
-<html lang="pl">
 
-<head>
-<meta charset="utf-8"/>
-<title> M O J A S T R O N A</title>
-<link rel="stylesheet" href="main2.css">
+        	<head>
+		<title>Witaj na mojej stronie</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  		<meta http-equiv="Content-Language" content="pl">	
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+		<style>
+body {
+  background-image: url('https://cdn.mos.cms.futurecdn.net/deaceNXy23NF8VsCrwZPgn-1024-80.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
 </head>
+			
+<style>
+<div style="text-align:center; width:250px; margin-left:auto; margin-right:auto;">
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
 
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+</style>
+</head>
 <body>
 
-<div id="cz_glowna">
-
-<header id="top_header">
-<h1>
-Witam na mojej stronce
-</h1>
-</header>
-
-<nav id="top_men">
-<ul>
-<li> Home</li>
-<li> About Me</li>
-<li> damian-janczak@o2.pl</li>
-</ul>
-</nav>
-
-<section id="main section">
-
-<article>
-<header>
-<hgroup>
-<h1>Tytuł 1</h1>
-<h2>Od czegoś trzeba zacząć</h2>
-</hgroup>
-</header>
-<p>Pierwszy wpis !</p>
-<footer>
-<p> Napisał Jan Kowalski </p>
-</footer>
-</article>
-
-<article>
-<header>
-<hgroup>
-<h1>Tytuł 2</h1>
-<h2>Od czegoś trzeba zacząć</h2>
-</hgroup>
-</header>
-<p>Pierwszy wpis !</p>
-<footer>
-<p> Napisał Jan Kowalski </p>
-</footer>
-</article>
-
-</section>
-
-<aside id="side_news">
-<h4>
-Newsy
-</h4>
-To tu będą umieszczane szybki informacje
-</aside>
-
-<footer id="stopka">
-Coś dla autorów
-Copyright 2020
-</footer>
-
+<div class="scrollmenu">
+  <a href="#home">Home</a>
+  <a href="https://www.fee.put.poznan.pl/">Strona wydziału</a>
+  <a href="o_mnie.html">O mnie</a>
+  <a href="ciekawostki.html">Ciekawostki</a>
+  <a href="galeria.html">Galeria</a>
+<input type="text" placeholder="Search..">
 </div>
 
-  
-
-</body>
+		</head>
+		
+<h1 style="color:rgb(255, 165, 0);"><b>Witaj na mojej stronie</b></h1>
+<p style="color:rgb(255, 165, 0);"> Kliknij w interesującą Cię zakładkę w menu i przejdź do odpowiedniej strony!</p>
+    		
+		<footer>		
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Logo_PP.png" style="width:400px;height:250px;">
+			
+			<p><a href="mailto:dominik.kilanowski@student.put.poznan.pl">Napisz do mnie</a></p>
+		
+	       </footer>
+	</body>
+</html>
